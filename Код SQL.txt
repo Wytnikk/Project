@@ -1,0 +1,33 @@
+create database Productdb;
+use Productdb;
+create table Products (
+id integer auto_increment primary key,
+ProductName varchar(30) NOT NULL,
+Manufacturer  varchar(20) NOT NULL,
+Productcount int default 0,
+price decimal NOT NULL);
+insert into Products (ProductName, Manufacturer, ProductCount, Price)
+VALUES
+('iPhone X', 'Apple', 3, 76000),
+('iPhone 8', 'Apple', 2, 51000),
+('Galaxy S9', 'Samsung', 2, 56000),
+('Galaxy S8', 'Samsung', 1, 41000),
+('P20 Pro', 'Huawei', 5, 36000),
+('Xmate X3', 'Huawei', 6, 99000),
+('9T pro', 'Xiaomi', 1, 30000),
+('Xiaomi 13 Lite', 'Xiaomi', 10, 35000),
+('Iphone 5S', 'Apple', 7, 42000),
+('Xiaomi 12 Lite', 'Xiaomi', 3, 22000),
+('Xiaomi 9A', 'Xiaomi', 4, 11000),
+('Iphone 10', 'Apple', 3, 60000),
+('Xmate X2', 'Huawei', 7, 76000),
+('Iphone 14', 'Apple', 1, 140000),
+('Iphone 13', 'Apple', 2, 44000),
+('Xiaomi 12T Pro', 'Xiaomi', 3, 56000),
+('POCO X5 Pro 5G', 'POCO', 2, 26000),
+('POCO X5', 'POCO', 3, 20000),
+('Redmi 12C', 'Xiaomi', 5, 13000),
+('Redmi 10C', 'Xiaomi', 6, 10000),
+('Iphone 14PRO MAX', 'Apple', 3, 178000),
+('Redmi 9C', 'Xiaomi', 1, 6500),
+('Iphone 13PRO MAX', 'Apple', 1, 120000);
